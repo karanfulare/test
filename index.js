@@ -5,11 +5,15 @@ const app = express();
 const port = 8000; // env can be used
 
 app.use("/", (req,res) => {
-  res.send("Its Working")
+ return res.send("Its Working")
 });
 
 app.get("/hi",(req,res)=>{
-res.send("hi this is test by karan")
+return res.send("hi this is test by karan")
+})
+
+app.get("/api/hi",(req,res)=>{
+return res.send("hi this is test by karan")
 })
 
 app.listen(port, (err) => {
