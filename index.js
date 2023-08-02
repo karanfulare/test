@@ -4,6 +4,10 @@ const express = require("express");
 const app = express();
 const port = 8000; // env can be used
 
+app.use("/", (req,res) => {
+  res.send("Its Working")
+});
+
 app.get("/hi",(req,res)=>{
 res.send("hi this is test by karan")
 })
