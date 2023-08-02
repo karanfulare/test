@@ -4,7 +4,7 @@ const express = require("express");
 const app = express();
 const port = 8000; // env can be used
 
-app.use("/", (req,res) => {
+app.get("/", (req,res) => {
  return res.send("Its Working")
 });
 
